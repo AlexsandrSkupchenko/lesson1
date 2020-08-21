@@ -61,8 +61,9 @@ public class Main {
     static void printName(String word) {
         System.out.println("«Привет, " + word + "!»");
     }
-    static void printYear(int y) {
-        if (!(y % 4 == 0) || ((y % 100 == 0) && !(y % 400 == 0))) System.out.println(y + " год не високосный");
-        else System.out.println(y + " високосный год");
+    static void printYear(int year) {
+        if (!(year % 4 == 0) || ((year % 100 == 0) && !(year % 400 == 0))) System.out.println(year + " год не явдяется високосным");
+        else System.out.println(year + " является високосным годом");
     }
+
 }
