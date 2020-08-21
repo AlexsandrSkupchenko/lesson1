@@ -40,7 +40,7 @@ public class Main {
         //7. Написать метод, которому в качестве параметра передается строка, обозначающая имя, метод должен вывести в консоль сообщение «Привет, указанное_имя!»;
         printName("Alex");
         //8. * Написать метод, который определяет является ли год високосным, и выводит сообщение в консоль. Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
-        printYear(2020);
+        //printYear(2020);
     }
     static int sum(int a, int b, int c, int d) {
         return (a * (b + (c / d)));
@@ -61,8 +61,5 @@ public class Main {
     static void printName(String word) {
         System.out.println("«Привет, " + word + "!»");
     }
-    static void printYear(int y) {
-        if (!(y % 4 == 0) || ((y % 100 == 0) && !(y % 400 == 0))) System.out.println(y + " год не високосный");
-        else System.out.println(y + " високосный год");
-    }
+
 }
